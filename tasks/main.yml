@@ -1,0 +1,12 @@
+---
+# tasks file for ansible-role-ioncube-conf
+
+- name: ensure file exists 00-ioncube.ini
+  copy:
+    content: ""
+    dest: "{{ ioncube_ini_path }}"
+    force: no
+
+- name: Configuring 00-ioncube.ini
+  lineinfile: dest="{{ ioncube_ini_path }}"
+              line='zend_extension = {{ ioncube_so_path }}'
