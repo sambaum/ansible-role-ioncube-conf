@@ -3,3 +3,5 @@
 
 ioncube_ini_path: /etc/php/7.0/apache2/conf.d/00-ioncube.ini
 ioncube_so_path: /usr/lib/php/20151012/ioncube/ioncube_loader_lin_7.0.so
+
+apache_restart_state: restarted

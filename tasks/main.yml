@@ -9,4 +9,5 @@
 
 - name: Configuring 00-ioncube.ini
   lineinfile: dest="{{ ioncube_ini_path }}"
-              line='zend_extension = {{ ioncube_so_path }}'
+              line='zend_extension =      {{ ioncube_so_path }}'
+  notify: restart apache
